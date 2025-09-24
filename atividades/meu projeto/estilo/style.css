@@ -1,0 +1,135 @@
+@charset  "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    /*Paleta azul principal*/
+    --cor0: #1A2168;
+    --cor1: #3C4592;
+    --cor2: #050B3D;
+    --cor3: #6D75BD;
+    --cor4: #ADB2E7;
+
+    /*Paleta rosa*/
+        --cor5:#CD2272;
+        --cor6:#A23669;
+        --cor7:#F70073;
+        --cor8:#783C58;
+        --cor9:#793440;
+    /*Paleta amarelo*/
+    --cor10: #F6A900;
+    --cor11: #F5C500;
+    --cor12: #F5E300;
+
+    --fonte-padrao:Arial;
+    --fonte-destaque: 'Bebas', cursive;
+    --fonte-teste: "Fjalla One", sans-serif;
+
+}
+header {
+    
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
+    width: auto;
+    height: 150px;
+    
+}
+header > h1 > img{
+    display: block;
+    margin: auto;
+    padding-top: 15px;
+    
+}
+header > h2 {
+    text-align: center;
+    color: aliceblue;
+    padding-bottom: 10px;
+    font-family: var(--fonte-destaque);
+    
+}
+header > nav > a {
+    font-family: var(--fonte-destaque);
+    font-size: 1em;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    margin: auto;
+}
+header > nav {
+    background-color: var(--cor1);
+    padding: 15px;
+    text-align: center;
+
+    
+}
+header > nav :hover {
+    background-color: #050B3D;
+    transition: 0.5s;
+    border-radius: 5px;
+    
+    
+}
+main {
+    
+    min-width: 300px;
+    max-width: 900px;
+    
+    margin: auto;
+    margin-top: 60px;
+    padding: 10px;
+ 
+}
+main article.topo {
+    text-align: center;
+}
+main > article > div {
+    display: inline-block;
+    padding-top: 16px;
+    margin-left: 16px;
+    padding-bottom: 16px;
+    
+    
+}
+
+div > article {
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 190px;
+    border: solid var(--cor0);
+    
+}
+div > article > img {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 90px;
+}
+div > article > h2 {
+    font-family: var(--fonte-teste);
+    text-align: center;
+    color: var(--cor2);
+}
+div > article > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor2);
+    display: block;
+    text-align: center;
+    background-color: var(--cor10);
+    border-radius: 8px;
+    padding: 5px;
+    margin: 12px;
+}
+div > article > a:hover {
+    background-color: var(--cor11);
+    color: #3C4592;
+}
+
+
+
+

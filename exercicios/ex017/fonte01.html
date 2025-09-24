@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            
+            Tipos de fontes para font-weight: lighter - normal - bold - bolder;
+            font-weight: ; para negrito
+            font-style: ; para estilo da fonte
+            */
+            
+        }
+        h1 {
+            /*font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            ORDEM DO SHORTHAND (NUNCA ALTERAR A ORDEM)
+             shorthand font
+                 1º font-style ->
+                 2º font-weight -> 
+                 3º font-size -> 
+                 4º font-family
+                 EX abaixo
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        
+        
+    </style>
+</head>
+<body >
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi similique facilis tempora numquam! Sapiente deserunt explicabo sunt soluta laboriosam neque eum repudiandae. Earum reiciendis expedita vel dolor odit voluptas magni. Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Perspiciatis laudantium et in quidem atque cum tempore, corrupti sunt ex, totam consequatur ullam quam, vitae itaque dolore temporibus pariatur quas eligendi.</p>
+    <h2>Subtitulos do exercicio</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt quaerat maiores earum non aliquid. Sapiente omnis rerum fuga vitae reprehenderit illum deleniti autem. Sequi porro reprehenderit enim incidunt dolorem. Architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat necessitatibus qui incidunt, ab sunt accusantium. Est eaque quod repellendus commodi quidem fugiat earum nisi dicta, eius quos nostrum quasi rerum!</p>
+    <h2>Tamanho das fontes</h2>
+    <ul>
+        <li style="font-size: 1em;">Tamanho Fonte 1em</li>
+        <li style="font-size: 1rem;">Tamanho Fonte 1rem</li>
+        <li style="font-size: 2ex;">Tamanho Fonte 2ex</li>
+        <li style="font-size: 3.2vw;">Tamanho Fonte 3.2vw</li>
+        <li style="font-size: 2.7vh;">Tamanho Fonte 2.7vh</li>
+        <li style="font-size: 100%;">Tamanho Fonte 100%</li>
+        <li style="font-size: 16px;">Tamanho Fonte 16px</li>
+    </ul>
+    <h2>Peso das Fontes</h2>
+    <ul style="font-family: 'Work Sans', Arial, Helvetica, sans-serif;">
+        <li style="font-weight: lighter;">Peso da fonte lighter</li>
+        <li style="font-weight: normal;">Peso da fonte normal</li>
+        <li style="font-weight: bold;">Peso da fonte bold</li>
+        <li style="font-weight: bolder;">Peso da font bolder</li>
+        <li style="text-decoration: underline; font-style: italic;">Fonte sublinhado em italico</li>
+        <li style="font-size: 1em; font-weight: bolder; font-style: italic; text-decoration: underline;">Config das fontes tudo junto</li>
+        <li style="font: italic bolder 1em 'Work Sans', sans-serif;">Exemplo usando shorthand</li>
+        
+    </ul>
+    
+</body>
+</html>

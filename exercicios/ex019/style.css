@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*
+Tudo em HTML que for id é = a # (só pode um elemento)
+Tudo em HTML que for class é = . (pode varios elementos)
+*/
+body {
+    background-color: rgba(196, 247, 247, 0.829);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: #098080;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #098080;
+    color: white;
+}
+h2 {
+    color: rgb(7, 56, 56);
+}
+.basico {
+    color: rgb(2, 141, 9);
+    
+    
+
+}
+.intermediario {
+    color: rgb(185, 182, 5);
+    
+}
+.avancado {
+    color: rgb(97, 2, 2);
+    
+    
+
+}
+.destaque {
+    background-color: #0980803b;
+}

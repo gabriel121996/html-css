@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronauta no espaço</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Caminho para sua imagem de fundo */
+            background-image: url('imagens/espaco.jpg');
+
+            /* A mágica acontece aqui! A imagem cobre todo o fundo */
+            background-size: cover;
+
+            /* Centraliza a imagem */
+            background-position: center;
+
+            /* Não deixa a imagem se repetir */
+            background-repeat: no-repeat;
+
+            /* Garante que o fundo ocupe a tela toda */
+            min-height: 100vh; 
+        }
+
+        /* Um container para posicionar o astronauta facilmente */
+        .astronauta-container {
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center;    /* Centraliza verticalmente */
+            height: 100vh; /* Usa a altura total da tela */
+        }
+
+        .astronauta-container img {
+            max-width: 40%; /* O astronauta terá no máximo 40% da largura da tela */
+            height: auto;    /* Mantém a proporção da imagem */
+        }
+    </style>
+</head>
+<body>
+    
+    <main> 
+        <div class="astronauta-container">
+            <img src="imagens/astronauta.png" alt="Um astronauta flutuando no espaço">
+        </div>
+    </main>
+    
+</body>
+</html>
