@@ -1,0 +1,122 @@
+@charset "UT8";
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --cor1: #070549;
+    --cor2: #80c2e5;
+    --cor3: #fdb325;
+    --corbotao:#20E634;
+
+    --fonte1: "Staatliches", sans-serif;;
+    
+}
+html,  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte1);
+    font-size: 1.1em;
+    
+}
+/*Inicio do estilo cabeçalho*/
+header {
+    max-width: 100vw;
+    height: 150px;
+}
+header > div {
+
+    background-image: url('../imagens/fundo2.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+img#cabecalho {
+    max-width: 95vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+nav {
+    background-color: var(--cor1);
+    padding: 10px;
+    text-align: center;
+    
+    
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 7px 20px 7px 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: var(--fonte1);
+    
+    font-weight: normal;
+    
+}
+a.btnav:hover {
+    background-color: var(--cor2);
+    padding: 7px 20px 7px 20px;
+    border-radius: 10px;
+    color: var(--cor1); 
+}
+
+/* Fim do estilo cabeçalho */
+
+/*Inicio conteudo*/
+main {
+    
+    max-width: 900px;
+    height: 700px;
+    margin: auto;
+    margin-top: 55px;
+    text-align: center;
+    
+}
+.logos {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+main > div.box {
+    
+    display: inline-block;
+    border: 2px solid var(--cor1);
+    width: 150px;
+    height: 200px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+
+}
+main > div.box > p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+a.botaoa {
+    padding-left: -10px;
+}
+a.btassistir {
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--cor1);
+    margin: 0px 10px 5px 10px;
+    padding: 7px;
+    border-radius: 17px;
+    font-weight: normal;
+}
+a.btassistir:hover {
+    background-color: var(--cor2);
+    color: var(--cor1);
+    text-shadow: rgba(0, 0, 0, 0.479);
+    
+}
+
