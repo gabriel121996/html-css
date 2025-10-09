@@ -46,6 +46,7 @@ nav {
     
 }
 nav > a {
+    font-size: 0.9em;
     color: white;
     text-decoration: none;
     text-align: center;
