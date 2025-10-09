@@ -46,4 +46,10 @@ nav.btserv > a {
     margin: 5px;
     border-radius: 10px ;
     
+} 
+iframe {
+    display: block;
+    margin: auto;
+    width: 710px;
+    height: 400px;
 }
