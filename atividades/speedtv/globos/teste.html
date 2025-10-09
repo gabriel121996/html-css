@@ -6,14 +6,20 @@
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 </head>
 <body>
-  <video id="video" controls autoplay style="width:100%; max-width:800px;"></video>
+  <video
+    id="video"
+    controls
+    muted
+    playsinline
+    autoplay
+    style="width:100%; max-width:800px;">
+  </video>
 
   <script>
     const video = document.getElementById('video');
     const m3u8Url = "https://popo67.live/live/695856981/426583391/164246.m3u8";
 
     if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      // Safari ou Chrome com suporte nativo
       video.src = m3u8Url;
     } else if (Hls.isSupported()) {
       const hls = new Hls();
