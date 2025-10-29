@@ -25,8 +25,8 @@ span#burguer {
     cursor: pointer;
 }
 span#burguer:hover {
-    background-color: white;
-    color: black;
+    background-color: rgb(46, 46, 46);
+    color: rgb(255, 255, 255);
 }
 menu {
     display: none;
