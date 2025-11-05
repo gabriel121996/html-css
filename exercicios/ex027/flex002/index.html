@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container-row {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        div.item-r {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        /**/
+        div.containerreverse {
+            background-color: rgb(252, 71, 0);
+            display: flex;
+            flex-direction: row-reverse;
+            
+        }
+        div.item-rr {
+            background-color: rgb(0, 191, 255);
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        /**/
+        div.containercolum {
+            background-color: rgb(149, 255, 122);
+            display: flex;
+            flex-direction: column;
+            
+        }
+        div.item-c {
+            background-color: rgb(0, 25, 250);
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        /**/
+        div.containercreverse {
+            background-color: rgb(225, 0, 255);
+            display: flex;
+            flex-direction: column-reverse;
+            
+        }
+        div.item-cr {
+            background-color: rgb(238, 255, 0);
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        img {
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>Row</h2>
+    
+    <div class="container-row">
+        <div class="item-r">A</div>
+        <div class="item-r">B</div>
+        <div class="item-r">C</div>
+        <div class="item-r">D</div>
+        <div class="item-r">E</div>
+        <div class="item-r">F</div>
+        <div class="item-r">G</div>
+    </div>
+    <h2>Row-reverse</h2>
+    <div class="containerreverse">
+        <div class="item-rr">A</div>
+        <div class="item-rr">B</div>
+        <div class="item-rr">C</div>
+        <div class="item-rr">D</div>
+        <div class="item-rr">E</div>
+        <div class="item-rr">F</div>
+        <div class="item-rr">G</div>
+    </div>
+    <h2>Column</h2>
+    <div class="containercolum">
+        <div class="item-c">A</div>
+        <div class="item-c">B</div>
+        <div class="item-c">C</div>
+        <div class="item-c">D</div>
+        <div class="item-c">E</div>
+        <div class="item-c">F</div>
+        <div class="item-c">G</div>
+    </div>
+    <h2>Column-reverse</h2>
+    <div class="containercreverse">
+        <div class="item-cr">A</div>
+        <div class="item-cr">B</div>
+        <div class="item-cr">C</div>
+        <div class="item-cr">D</div>
+        <div class="item-cr">E</div>
+        <div class="item-cr">F</div>
+        <div class="item-cr">G</div>
+    </div>
+    <h1>Flex-direction</h1>
+
+    <img src="Flex-direction.png" alt="">
+</body>
+</html>
