@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
         div.container {
             background-color: lightsalmon;
             display: flex;
             flex-flow: row wrap;
-            
+            align-items: flex-start;
+            padding: 10px;
+            height: 400px;
             
         }
         div.item {
@@ -17,27 +23,35 @@
             border: 1px solid black;
             text-align: center;
             padding: 20px;
+            margin-right: 10px;
+
         }
         div#i1 {
             order: 0;
+            align-self: auto;
+            
         }
         div#i2 {
-            order: -2;
+            order: -0;
+            align-self: start;
         }
         div#i3 {
-            order: 4;
+            order: 0;
+            align-self: end;
         }
         div#i4 {
-            order: 8;
+            order: 0;
+            align-self: center;
         }
         div#i5 {
-            order: 2;
+            order: 0;
+            align-self: stretch;
         }
         div#i6 {
             order: 0;
         }
         div#i7 {
-            order: -4;
+            order: -0;
         }
 
 
@@ -50,8 +64,7 @@
         <div class="item" id="i3">C</div>
         <div class="item" id="i4">D</div>
         <div class="item" id="i5">E</div>
-        <div class="item" id="i6">F</div>
-        <div class="item" id="i7">G</div>
+        
     </div>
 </body>
 </html>
