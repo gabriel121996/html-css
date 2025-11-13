@@ -9,7 +9,6 @@
             background-color: lightsalmon;
             display: flex;
             flex-flow: row nowrap;
-            align-items: flex-start;
             
             
             
@@ -18,21 +17,34 @@
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-  
+
+            flex-basis: 200px;
+      
         }
+        div#cxA {
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+        div#cxB {
+            flex-grow: 1;
+            flex-shrink: 1;
+            
+        }
+        div#cxC {
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
 
 
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">Outro conteudo</div>
-        <div class="item">C</div>
-        <div class="item">Conteudo um pouco maior</div>
-        <div class="item">E</div>
-        <div class="item">Conteudo maior ainda, que vai ocupar mais espaço.</div>
-        <div class="item">G</div>
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+        
     </div>
 </body>
 </html>

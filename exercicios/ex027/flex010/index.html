@@ -9,16 +9,14 @@
             background-color: lightsalmon;
             display: flex;
             flex-flow: row nowrap;
-            align-items: flex-start;
-            
-            
-            
         }
         div.item {
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-  
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 0;
         }
 
 
@@ -27,12 +25,9 @@
 <body>
     <div class="container">
         <div class="item">A</div>
-        <div class="item">Outro conteudo</div>
+        <div class="item">B</div>
         <div class="item">C</div>
-        <div class="item">Conteudo um pouco maior</div>
-        <div class="item">E</div>
-        <div class="item">Conteudo maior ainda, que vai ocupar mais espaço.</div>
-        <div class="item">G</div>
+        
     </div>
 </body>
 </html>
