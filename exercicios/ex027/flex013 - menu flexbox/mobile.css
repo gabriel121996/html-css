@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    height: 90vh;
+    width: 97vw;
+}
+header, header > nav {
+    flex-flow: column nowrap;
+}
+
+header > h1 {
+    flex-basis: 50px;
+    
+}
+header > nav > a {
+    width: 90vw;
+}
+main {
+    max-width: 480px;
+    
+    
+}
