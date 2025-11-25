@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            margin: 20px;
+        }
+        div#container {
+            padding: 10px;
+            background-color: lightskyblue;
+            
+            display: grid;
+            grid-template-columns: auto auto auto ;
+            grid-template-rows: 100px 100px 100px;
+            grid-gap: 10px;
+
+        }
+        div.item {
+            border: 1px dashed black;
+            background-color: brown;
+            text-align: center;
+            
+            
+        }
+        div#container-flex {
+            padding: 10px;
+            margin-top: 50px;
+            background-color: lightgray;
+            display: flex;
+            flex-flow: wrap wrap ;
+            justify-content: center;
+            align-content: center;
+            
+            grid-gap: 10px;
+            
+        }
+        div.itemf {
+            color: white;
+            background-color: darkblue;
+            border: 1px dashed black;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 150px;
+            align-self: start;
+            
+            
+            
+        }
+        div.itemf1 {
+            color: white;
+            background-color: rgb(81, 81, 173);
+            border: 1px dashed black;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 150px;
+           
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        
+    </div>
+
+    <div id="container-flex">
+        <div class="itemf">A</div>
+        <div class="itemf1">B <br> B <br> B</div>
+        <div class="itemf">C</div>
+        <div class="itemf">D</div>
+        <div class="itemf">E</div>
+        <div class="itemf">F</div>
+        <div class="itemf">G</div>
+        
+    </div>
+</body>
+</html>
